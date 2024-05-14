@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("Background.jpg");
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center; 
+}
+
+    .navbar {
+        background-color: transparent; 
+        padding: 10px 20px; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; 
+    }
+
+    .navbar ul li {
+        margin-right: 50px;
+        transition: transform 0.2s;
+    }
+
+    .navbar ul li:last-child {
+        margin-right: 0; 
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #faf4e4; 
+        font-size: 16px;
+    }
+
+    .navbar ul li a:hover, .navbar ul li a:focus {
+        transform: scale(1.1); 
+    }
+
+    .container {
+        max-width: 800px; 
+        margin: 100px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        background-color: #faf4e4; 
+    }
+
+    h1, h3 {
+        color: #D3a121; 
+    }
+
+    p, ul, li {
+        color: black; 
+    }
+
+    ul {
+        color: black; 
+    }
+
+    li {
+        color: black; 
+    }
+</style>
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li id="home" class="active"><a href="Home.html"><img src="logo1.png" alt="Home"></a></li>
+    </ul>
+    <ul>
+        <li><a href="Tasks.html">Tasks</a></li>
+        <li><a href="Tips.html">Tips</a></li>
+    </ul>
+</div>
+<div class="container mt-5 center-border">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="heading-left">About Page</h1>
+            <br>
+            <p></p>
+            <h3 class="heading-left">Purpose</h3>
+            <p></p>
+            <p>The primary purpose of this Website is to assist students having difficulties managing their budget properly, with the help of our website students can easily monitor their budget and learn more about financial management. On this Website, they can see the information about their daily expenses as well as their savings.</p>
+            <h3 class="heading-left">Features</h3>
+            <p></p>
+            <ul>
+                <li><strong>Can customize budget management depending on user's preferences:</strong> The budget management website offers unparalleled versatility, allowing users to personalize the site to their specific preferences in order to successfully achieve their financial goals.</li>
+                <li><strong>Can track the savings and expenses money:</strong> This website also has a chart where users may enter their daily expenses and savings for specified days, and the website will generate a line graph displaying their progress.</li>
+                <li><strong>User-friendly:</strong> The website is also user-friendly, as users simply enter their savings and expenses into the designated places, and the website calculates them for them, providing ease.</li>
+                <li><strong>Progress will be automatically saved after exiting or logging out:</strong> The online platform will save all of the information that the users enter. Whether it's the progress chart showing their expenses and savings, or the user-created UI for the website.</li>
+                <li><strong>Calendar:</strong> Users can use the calendar to mark the dates or make a reminder. The online platform additionally offers a calendar in which they can enter their events and notify them whenever a specific day arrives by email or push notification on the website.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

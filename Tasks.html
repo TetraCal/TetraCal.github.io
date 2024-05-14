@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-6Dckd/6gBwsiWVXwSzJlmYlPkT7Ww09V6z/5j73VUB7q5OW67OoapZj3V5J+K4DdUZ0cS1TbGb6t7YeLxob2rA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="Task.css">
+</head>
+<body>
+
+<div class="navbar">
+    <ul>
+        <li id="home" class="active"><a href="Home.html"><img src="logo1.png" alt="Home"></a></li>
+    </ul>
+    <ul>
+        <li><a href="Tips.html">Tips</a></li>
+        <li><a href="About.html">About Us</a></li>
+        
+    </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2"> 
+      <div class="to-do-container">
+        <h2 class="text-center">Take Notes</h2>
+        <form id="to-do-form">
+          <div class="form-group">
+            <label for="task">Task</label>
+            <input type="text" class="form-control" id="task" placeholder="Enter task">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+        </form>
+        <ul class="list-group mt-3" id="task-list">
+          <!-- Tasks will be added here dynamically -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="Task.js"></script>
+</body>
+</html>

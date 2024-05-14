@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to SaveSavvy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      min-height: 100vh; 
+      background-image: url(peakpx.jpg);
+      background-repeat: no-repeat; 
+      background-size: cover; 
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px; 
+    }
+
+    .inner-container {
+      padding: 20px; 
+      background-color: rgb(34, 32, 32, 0.61);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #d3a121;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color:  #FAF4E4;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #d3a121 ;
+      color: #FAF4E4;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: black;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+    }
+ 
+  </style>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+<div class="container">
+  <div class="inner-container">
+    <img class="logo" src="brand1.png" alt="Home">
+    <h1>Welcome</h1>
+    <p>Take control of your finances effortlessly.</p>
+    <button id="explore-btn">Get Started</button>
+  </div>
+</div>
+<script>
+  document.getElementById('explore-btn').addEventListener('click', function() {
+   
+    window.location.href = "Home.html";
+  });
+  
+</script>
+
+</body>
+</html>

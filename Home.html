@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="Home.css">
+</head>
+<div class="navbar">
+    <ul>
+        <li id="home" class="active"><img src="logo1.png" alt="Home"></a></li>
+    </ul>
+    <ul>
+        <li><a href="Tasks.html">Tasks</a></li>
+        <li><a href="Tips.html">Tips</a></li>
+        <li><a href="About.html">About Us</a></li>
+
+    
+    </ul>
+</div>
+<div class="container">
+    <div class="options">
+        <button id="show-savings" onclick="showSavings()">Savings</button>
+        <button id="show-expenses" onclick="showExpenses()">Expenses</button>
+    </div>
+    <div id="savings-menu">
+        <input type="number" id="saving-amount" placeholder="Enter savings amount">
+        <input type="number" id="saving-day" placeholder="Enter day">
+        <button onclick="addSaving()">Add Savings</button>
+        <div>Total Savings: <span id="total-savings">0</span></div>
+    </div>
+    <div id="expenses-menu">
+        <input type="number" id="expense-amount" placeholder="Enter expense amount">
+        <input type="number" id="expense-day" placeholder="Enter day">
+        <select id="expense-category">
+            <option value="food">Food</option>
+            <option value="transportation">Transportation</option>
+            <option value="academic">Academic</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+        <div>Total Expenses: <span id="total-expenses">0</span></div>
+    </div>
+    <div id="notification-container"></div>
+    <div id="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+    <div id="expense-chart-container">
+        <canvas id="expense-chart" width="300" height="300"></canvas>
+    </div>
+    <div class="history-buttons">
+        <button id="toggle-savings-history" onclick="toggleHistory('savings')">Toggle Savings History</button>
+        <button id="toggle-expenses-history" onclick="toggleHistory('expenses')">Toggle Expenses History</button>
+        <button id="clear-data" onclick="clearLocalStorage()">Clear All Data</button>
+    </div>
+    <div id="savings-history"></div>
+    <div id="expenses-history"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js">
+
+</script>
+</body>
+</html>
